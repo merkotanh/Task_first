@@ -6,13 +6,13 @@ class Task1
   def first 
     str  = 'ruby'
     str3 = '<3ruby'
-	30.times do |i|
-	if i == 10 || i == 20 || i == 25
-	  puts str
-	else 
-	  puts str3
-	end
-	end
+    30.times do |i|
+    if i == 10 || i == 20 || i == 25
+      puts str
+    else 
+      puts str3
+    end
+    end
   end
 end
 end
