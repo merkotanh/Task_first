@@ -12,14 +12,14 @@ def collect_types(a)
  
   def ask_type(el, type, brr)
     if el.kind_of?(type)
-	  brr << el
+      brr << el
     end
   end
 
   a.flatten!
   a.each { |elem|
     ask_type(elem, Integer, b)
-	ask_type(elem, String, c)
+    ask_type(elem, String, c)
   } 
   print b
   print "\n"
