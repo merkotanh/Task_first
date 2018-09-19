@@ -11,14 +11,14 @@ n = gets.chomp.to_i
   x=''
   n.times do |i|
     n.times do |j|
-	  if i == j
-	    x += ' 1 '
-	  else
-		x += ' 0 '
-	  end
-	end
-	puts x
-	x=''
+      if i == j
+        x += ' 1 '
+      else
+        x += ' 0 '
+      end
+    end
+    puts x
+    x=''
   end
 end
 end
