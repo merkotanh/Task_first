@@ -21,9 +21,13 @@ def collect_types(a)
     ask_type(elem, Integer, b)
     ask_type(elem, String, c)
   } 
-  print b
-  print "\n"
-  print c
-  print "\n"
+
+  def echo(mas)
+    print mas
+    print "\n"
+  end
+  
+  echo(b)
+  echo(c)
 end
 end
