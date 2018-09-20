@@ -6,10 +6,10 @@ module Hashs
   def find (massiv, findkey)
     return if (massiv == nil)
     massiv.each do  |key, value|
-	  print value if key == findkey.to_sym
-	  if value.is_a?(Hash) 
-	    find(value, findkey)
-	  end
+      print value if key == findkey.to_sym
+      if value.is_a?(Hash) 
+        find(value, findkey)
+      end
     end
   end
 end
