@@ -5,20 +5,16 @@
 #0 0 1 
 #---
 module Matrix
-def third(n = 4)
-print "Введите n : "
-n = gets.chomp.to_i
-  x=''
-  n.times do |i|
-    n.times do |j|
-      if i == j
-        x += ' 1 '
-      else
-        x += ' 0 '
+  def third(rank = 4)
+    print "Введите размер матрицы : "
+    rank = gets.chomp.to_i
+    stroka=''
+    rank.times do |i|
+      rank.times do |j|
+        (i == j)?  stroka+= '1' :  stroka += '0'
       end
+      puts stroka
+      stroka=''
     end
-    puts x
-    x=''
   end
-end
 end

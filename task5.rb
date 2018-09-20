@@ -6,13 +6,11 @@
 #'i-love-ruby'
 #---
 module IRuby
-def Change(str, icase)
-  if (str=~/ /)
-    puts str.gsub(" ",icase)
+  def change(str, icase)
+    puts str.gsub(" ",icase) if (str=~/ /)
   end
-end
-
-def Change1(str, icase, icap)
-  puts str.split.map(&icap).join(icase)
-end
+  
+  def change1(str, icase, icap)
+    puts str.split.map(&icap).join(icase)
+  end
 end

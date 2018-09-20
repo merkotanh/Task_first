@@ -23,9 +23,9 @@ arr = [[1, 2, 3, 4, '1'], ['2', '5', '10'], [111, 222, 333, 444], ['i', 'love', 
 
 begin
 print "N№ задания : "
-t = gets.chomp.to_i
+urchoice = gets.chomp.to_i
 
-case t
+case urchoice
 when 1
   Ruby3::Task1.new.first
 when 2 
@@ -33,12 +33,12 @@ when 2
 when 3
   Task_first.new.third
 when 4
-  Task_first.new.find(hash)
+  Task_first.new.find(hash, :key9)
 when 5
-  Task_first.new.Change1(str, '', :capitalize)
-  Task_first.new.Change1(str, '_', :downcase)
-  Task_first.new.Change1(str, '-', :downcase)
+  Task_first.new.change1(str, '', :capitalize)
+  Task_first.new.change1(str, '_', :downcase)
+  Task_first.new.change1(str, '-', :downcase)
 when 6
   Task_first.new.collect_types(arr)
 end
-end while t.between?(1,6)
+end while urchoice.between?(1,6)
